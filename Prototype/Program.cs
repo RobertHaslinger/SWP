@@ -6,7 +6,9 @@ namespace Prototype
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Initialize with values
+
+
         }
     }
 }
