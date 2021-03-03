@@ -1,11 +1,30 @@
 ﻿using System;
+using Newtonsoft.Json.Linq;
 
 namespace Prototype.Bows
 {
     public class Longbow : BowPrototype
     {
-        public double Length { get; private set; }
-        public double Weight { get; private set; }
+        public double Length { get;  set; }
+        public double Weight { get;  set; }
+
+
+
+        public Longbow(JToken token)
+        {
+            Name = token["Name"].Value<string>();
+            Damage = token["Damage"].Value<double>();
+            Material = (Material)Enum.Parse(typeof(Material), token["Material"].ToString());
+            UsedArrow = new Arrow()
+            {
+                Head = (Material)Enum.Parse(typeof(Material), token["UsedArrow"]["Head"].ToString()),
+                Shaft = (Material)Enum.Parse(typeof(Material), token["UsedArrow"]["Shaft"].ToString()),
+                Tail = (Material)Enum.Parse(typeof(Material), token["UsedArrow"]["Tail"].ToString()),
+            };
+            AttackRatio = token["AttackRatio"].Value<double>();
+            Length = token["Length"].Value<double>();
+            Weight = token["Weight"].Value<double>();
+        }
 
         /// <summary>
         /// Default constructor for a longbow

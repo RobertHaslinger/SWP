@@ -3,13 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
+using Prototype.Bows;
 
 namespace Prototype.Swords
 {
     public class Dagger : SwordPrototype
     {
-        public double CurveAngle { get; private set; }
-        public double Sharpness { get; private set; }
+        public double CurveAngle { get;  set; }
+        public double Sharpness { get;  set; }
+
+        public Dagger(JToken token)
+        {
+            Name = token["Name"].Value<string>();
+            Damage = token["Damage"].Value<double>();
+            Material = (Material)Enum.Parse(typeof(Material), token["Material"].ToString());
+            AttackRatio = token["AttackRatio"].Value<double>();
+            CurveAngle = token["CurveAngle"].Value<double>();
+            Sharpness = token["Sharpness"].Value<double>();
+        }
 
         /// <summary>
         /// Default constructor for a dagger

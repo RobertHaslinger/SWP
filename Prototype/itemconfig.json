@@ -1,0 +1,31 @@
+{
+  "Swords.Longsword": {
+    "Name": "Excalibur",
+    "Damage": 17.3,
+    "AttackRatio": 0.73,
+    "Material": "Obsidian",
+    "Length": 17,
+    "Weight": 433
+  },
+  "Swords.Dagger": {
+    "Name": "Stab-an-kill",
+    "Damage": 4.67,
+    "AttackRatio": 6.3,
+    "Material": "Iron",
+    "CurveAngle": 43,
+    "Sharpness": 70
+  },
+  "Bows.Longbow": {
+    "Name": "Crowfoot",
+    "Damage": 20.3,
+    "AttackRatio": 0.53,
+    "Material": "Wood",
+    "Length": 25,
+    "Weight": 140,
+    "UsedArrow": {
+      "Head": "Obsidian",
+      "Shaft": "Wood",
+      "Tail":  "Stone" 
+    } 
+  }
+}

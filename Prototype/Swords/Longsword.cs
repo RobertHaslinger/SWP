@@ -3,13 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
+using Prototype.Bows;
 
 namespace Prototype.Swords
 {
     public class Longsword : SwordPrototype
     {
-        public double Length { get; private set; }
-        public double Weight { get; private set; }
+        public double Length { get;  set; }
+        public double Weight { get;  set; }
+
+        public Longsword(JToken token)
+        {
+            Name = token["Name"].Value<string>();
+            Damage = token["Damage"].Value<double>();
+            Material = (Material) Enum.Parse(typeof(Material),token["Material"].ToString());
+            AttackRatio = token["AttackRatio"].Value<double>();
+            Length = token["Length"].Value<double>();
+            Weight = token["Weight"].Value<double>();
+        }
 
         /// <summary>
         /// Default constructor for a longsword

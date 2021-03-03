@@ -8,13 +8,13 @@ namespace Prototype.Swords
 {
     public abstract class SwordPrototype : IItem
     {
-        public string Name { get; protected set; }
+        public string Name { get;  set; }
 
-        public double Damage { get; protected set; }
+        public double Damage { get;  set; }
 
-        public double AttackRatio { get; protected set; }
+        public double AttackRatio { get;  set; }
 
-        public Material Material { get; protected set; }
+        public Material Material { get;  set; }
 
         public abstract SwordPrototype Clone();
     }
