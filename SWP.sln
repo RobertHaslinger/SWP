@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype.Test", "Prototype
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{6ADF02B9-8C11-41BE-8AE5-5A86865BE90B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandComposite", "CommandComposite\CommandComposite.csproj", "{2E6B23ED-CF5F-4104-A271-DD8224E71094}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandComposite", "CommandComposite\CommandComposite.csproj", "{2E6B23ED-CF5F-4104-A271-DD8224E71094}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{ABC5A26F-9B61-4957-BFAB-704C6F4D12D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2E6B23ED-CF5F-4104-A271-DD8224E71094}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E6B23ED-CF5F-4104-A271-DD8224E71094}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E6B23ED-CF5F-4104-A271-DD8224E71094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABC5A26F-9B61-4957-BFAB-704C6F4D12D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC5A26F-9B61-4957-BFAB-704C6F4D12D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC5A26F-9B61-4957-BFAB-704C6F4D12D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC5A26F-9B61-4957-BFAB-704C6F4D12D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
