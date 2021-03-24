@@ -8,11 +8,10 @@ namespace CommandComposite
         {
             FerrariFlipperInvoker flipper = new FerrariFlipperInvoker(new PointsReceiver());
             flipper.StartGame();
-            string outcome = "";
             while (true)
             {
                 Console.WriteLine("Simulate an outcome: What did the ball hit (ramp, target, hole, ferrari, exit)?");
-                outcome = Console.ReadLine();
+                string outcome = Console.ReadLine();
                 
                 if (outcome == "exit") break;
                 
