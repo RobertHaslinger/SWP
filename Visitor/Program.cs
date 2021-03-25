@@ -11,7 +11,7 @@ namespace Visitor
         {
             List<IElement> elements = new List<IElement>();
             elements.Add(new Ramp("Airramp", true, 20, 3, true));
-            elements.Add(new Led(69, true, Color.Red, 10));
+            elements.Add(new Led(420, true, Color.Red, 10));
             elements.Add(new Target('Y', false, 15));
 
             Console.WriteLine("Report state at the beginning:");
