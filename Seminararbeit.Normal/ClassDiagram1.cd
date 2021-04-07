@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Seminararbeit.Normal.Developer.JavaDeveloper">
+    <Position X="3.75" Y="1.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Developer\JavaDeveloper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Seminararbeit.Normal.Developer.JavaScriptDeveloper">
+    <Position X="7.25" Y="1.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Developer\JavaScriptDeveloper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Seminararbeit.Normal.Developer.PhpDeveloper">
+    <Position X="11" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Developer\PhpDeveloper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Seminararbeit.Normal.SoftwareProject">
+    <Position X="3.75" Y="3.75" Width="9.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAACAAAAAAAAABAAAAAAAIAAAAA=</HashCode>
+      <FileName>SoftwareProject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
